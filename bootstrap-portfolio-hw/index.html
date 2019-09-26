@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Linking bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Header/NavBar -->
+    <!-- rows and columns must always be in container? when container tag added instead of div, header has margin on right and left that i cannot take away so kept div tag instead -->
+    <div class="bg-white border-bottom">
+        <div class="container">
+            <!-- row that contains all of nav header -->
+            <div class="row">
+                <!-- Column that contains individual nav on name in header at 7 when md -->
+                <div class="col-md-7">
+                    <ul class="nav">
+                        <li class="nav-item bg-info">
+                            <a class="nav-link active text-white" href="#" id="aldo_huayhua_headline">Aldo
+                                Huayhua</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column that contains individual nav on about,port,contact at 5 when md -->
+                <div class="col-md-5">
+                    <!-- nav with aobut,port,contact specified to be stuck to end of page -->
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- section containing main article of page -->
+    <div class="container">
+            <div id="jumbotron-body" class="jumbotron bg-white">
+                <!-- <div class="jumbotron"> -->
+                <h1 id="about-me-title" class="border-bottom">About Me</h1>
+                <!-- row giving column space for image and parragraph -->
+                <div id="body-article" class="row">
+                    <!-- image link -->
+                    <div id="aldo-img" class="col-xs-12">
+                        <img src="../bootstrap-portfolio/images/aldoprofilecolor.jpg" class="img-fluid" alt="aldopic">
+                    </div>
+                    <!-- parragraph of main article -->
+                    <div id="body-parragraph" class="col-md-8">
+                        <p>Born June 5th 1993 in Lima Peru then emigrated to the United States at 10 years old.
+                            Hold a bachelors degree in Human Resource Management from the Rutgers School of
+                            Management
+                            and
+                            Labor
+                            Relations in New Brunswick NJ.
+                            Currenlty have 3 years of professional Human Resource experince, but am looking to make
+                            a
+                            career
+                            change.
+                            Ideally into a technical positions, currently enrolled in the Rugters University coding
+                            bootcamp.
+                            Residing in Metuchen NJ, ideally located in central jersey, can travel to many different
+                            locations as
+                            required.
+                            Can be in NYC within 40mins or philadelphia within 1 hour, commute will not be a
+                            challenge
+                            when
+                            it comes to
+                            my next professional role.
+                            All I look for is to be in a tehcnical posiions, would prefer one where Web/Software
+                            Development
+                            is the main
+                            purpose.
+                            I am a very analytical and detail oriented individual and can complete reports and
+                            analyze
+                            data
+                            very easily,
+                            Im very adept with excel and can use pivot tables, v lookups, functions and macros with
+                            ease.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+</body>
+<footer>
+    <p class="copyright"> Copyright © </p>
+</footer>
+
+</html>

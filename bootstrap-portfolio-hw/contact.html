@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- linking bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Linkng CSS -->
+        <link rel="stylesheet" href="style_contact.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <!-- rows and columns must always be in container? -->
+    <div class="bg-white  border-bottom">
+        <div class="container">
+            <!-- row that contains all of nav header -->
+            <div class="row bg-white">
+                <!-- Column that contains nav on name in header at 7 when md -->
+                <div class="col-md-7">
+
+                    <ul class="nav">
+                        <li class="nav-item bg-info">
+                            <a class="nav-link active text-white" href="#" id="aldo_huayhua_headline">Aldo
+                                Huayhua</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- column that contains nav on about,port,contact at 5 when md -->
+                <div class="col-md-5">
+                    <!-- nav with aobut,port,contact specified to be stuck to end of page -->
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- section containing main article of page -->
+    <div class="container">
+        <div class="row">
+            <div id="jumbotron-body" class="jumbotron bg-white">
+                <div class="col-md-12">
+                    <h1 id="contact-body">Contact</h1>
+                    <hr>
+                    <form>
+                        <div id="name-form" class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" placeholder="Add Name">
+                        </div>
+                        <div id="email-form" class="form-group">
+                            <label>E-mail</label>
+                            <input type="email" placeholder="Add E-Mail" class="form-control">
+                        </div>
+                        <div id="message-form" class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" placeholder="Add Message"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

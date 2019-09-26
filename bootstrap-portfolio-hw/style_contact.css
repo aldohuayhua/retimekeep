@@ -1,0 +1,29 @@
+#aldo_huayhua_headline {
+    /* text-align: center; */
+    background-color:#4aaaa5;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+body {
+    background-image: url("../bootstrap-portfolio/images/concrete-texture.png")
+}
+#jumbotron-body {
+    width: 940px;
+    margin-top: 25px;
+    padding-top: 25px;
+}
+/* #message-form {
+    height: 100px;
+} */
+textarea.form-control {
+    height: 200px;
+}
+#contact-body { 
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+#contact-line {
+    color: black;
+}
