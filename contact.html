@@ -5,55 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- linking bootstrap locally -->
+    <link rel="stylesheet"
+        href="C:\Users\aldoh\OneDrive\Desktop\bootstrap_local\bootstrap-4.3.1-dist\css\bootstrap.min.css">
+
     <!-- linking bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <!-- Linkng CSS -->
-        <link rel="stylesheet" href="style_contact.css">
+    <link rel="stylesheet" href="style_contact.css">
     <title>Contact</title>
 </head>
 
 <body>
-    <!-- rows and columns must always be in container? -->
-    <div class="bg-white  border-bottom">
-        <div class="container">
-            <!-- row that contains all of nav header -->
-            <div class="row bg-white">
-                <!-- Column that contains nav on name in header at 7 when md -->
-                <div class="col-md-7">
-
-                    <ul class="nav">
-                        <li class="nav-item bg-info">
-                            <a class="nav-link active text-white" href="#" id="aldo_huayhua_headline">Aldo
-                                Huayhua</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- column that contains nav on about,port,contact at 5 when md -->
-                <div class="col-md-5">
-                    <!-- nav with aobut,port,contact specified to be stuck to end of page -->
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="index.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="contact.html">Contact</a>
-                        </li>
-
-                    </ul>
-                </div>
-
+    <!-- Header/NavBar -->
+    <div class="border-bottom">
+        <!-- row that contains all of nav header -->
+        <div class="row bg-white">
+            <!-- this blank column gives a small margin to the header on the left side -->
+            <div class="col-xs-0 col-md-1 col-lg-1">
             </div>
+            <!-- Column that contains block with full name-->
+            <div class="col-xs-12 col-md-4 col-lg-3" id="aldo_huayhua_headline">
+                <div class="nav-item">
+                    <p id="header-name" class="text-white text-center">Aldo Huayhua</p>
+                </div>
+            </div>
+            <!-- column that contains individual nav on about,port,contact -->
+            <div class="col-xs-12 col-md-7 col-lg-8" id="nav-options">
+                <div class="row">
+                    <!-- empty column to give push nav bar to the right when size is md to lg -->
+                    <div class="col-xs-0 col-md-4 col-lg-6">
+                    </div>
+                    <div class="col-xs-12 col-md-8 col-lg-6">
+                        <!-- nav with about,port,contact specified to be stuck to center of column its contained in -->
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <!-- section containing main article of page -->
     <div class="container">
         <div class="row">
-            <div id="jumbotron-body" class="jumbotron bg-white">
+            <div id="jumbotron-body" class="jumbotron bg-white border">
                 <div class="col-md-12">
                     <h1 id="contact-body">Contact</h1>
                     <hr>
@@ -78,5 +84,7 @@
 
     </div>
 </body>
+<!-- sticky footer, works ok -->
+<div class="sticky">Copyright ©</div>
 
 </html>

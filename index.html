@@ -5,75 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- linking reset css -->
+    <link rel="stylesheet" href="reset.css">
     <!-- Linking CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Linking bootstrap -->
+    <!-- linking bootstrap locally -->
+    <!-- <link rel="stylesheet"
+        href="C:\Users\aldoh\OneDrive\Desktop\bootstrap_local\bootstrap-4.3.1-dist\css\bootstrap.min.css"> -->
+    <!-- Linking bootstrap online -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Document</title>
+    <title>About</title>
 </head>
 
 <body>
     <!-- Header/NavBar -->
-    <!-- rows and columns must always be in container? when container tag added instead of div, header has margin on right and left that i cannot take away so kept div tag instead -->
-    <div class="bg-white border-bottom">
-        <div class="container">
-            <!-- row that contains all of nav header -->
-            <div class="row">
-                <!-- Column that contains individual nav on name in header at 7 when md -->
-                <div class="col-md-7">
-                    <ul class="nav">
-                        <li class="nav-item bg-info">
-                            <a class="nav-link active text-white" href="#" id="aldo_huayhua_headline">Aldo
-                                Huayhua</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- column that contains individual nav on about,port,contact at 5 when md -->
-                <div class="col-md-5">
-                    <!-- nav with aobut,port,contact specified to be stuck to end of page -->
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="index.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
+    <div class="border-bottom">
+        <!-- row that contains all of nav header -->
+        <div class="row bg-white">
+            <!-- this blank column gives a small margin to the header on the left side -->
+            <div class="col-xs-0 col-md-1 col-lg-1">
             </div>
+            <!-- Column that contains block with full name-->
+            <div class="col-xs-12 col-md-4 col-lg-3" id="aldo_huayhua_headline">
+                <div class="nav-item">
+                    <p id="header-name" class="text-white text-center">Aldo Huayhua</p>
+                </div>
+            </div>
+            <!-- column that contains individual nav on about,port,contact -->
+            <div class="col-xs-12 col-md-7 col-lg-8" id="nav-options">
+                <div class="row">
+                    <!-- empty column to give push nav bar to the right when size is md to lg -->
+                    <div class="col-xs-0 col-md-4 col-lg-6">
+                    </div>
+                    <div class="col-xs-12 col-md-8 col-lg-6">
+                        <!-- nav with about,port,contact specified to be stuck to center of column its contained in -->
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <!-- section containing main article of page -->
-    <div class="container">
-            <div id="jumbotron-body" class="jumbotron bg-white">
-                <!-- <div class="jumbotron"> -->
+    <div class="row">
+        <!-- empty column gives margin on the left -->
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+        </div>
+        <!-- column containing body article -->
+        <div class="col-xs-11 col-sm-10 col-md-9 col-lg-0 col-xl-9">
+            <div id="jumbotron-body" class="jumbotron bg-white border">
                 <h1 id="about-me-title" class="border-bottom">About Me</h1>
                 <!-- row giving column space for image and parragraph -->
                 <div id="body-article" class="row">
                     <!-- image link -->
-                    <div id="aldo-img" class="col-xs-12">
-                        <img src="images/aldoprofilecolor.jpg" class="img-fluid" alt="aldopic">
-                    </div>
-                    <!-- parragraph of main article -->
-                    <div id="body-parragraph" class="col-md-8">
-                        <p>Born June 5th 1993 in Lima Peru then emigrated to the United States at 10 years old.
+                    <div class="col-xs-11 col-md-11">
+                        <div class="pull-left">
+                            <img src="images/aldoprofilecolor.jpg" class="img-fluid" alt="aldopic" id="aldo-img">
+                        </div>
+                        <!-- parragraph of main article -->
+                        <p id="body-parragraph" class="pull-right">Born June 5th 1993 in Lima Peru then
+                            emigrated
+                            to the United
+                            States at 10 years old.
                             Hold a bachelors degree in Human Resource Management from the Rutgers School of
                             Management
                             and
                             Labor
                             Relations in New Brunswick NJ.
-                            Currenlty have 3 years of professional Human Resource experince, but am looking to make
+                            Currenlty have 3 years of professional Human Resource experince, but am looking to
+                            make
                             a
                             career
                             change.
-                            Ideally into a technical positions, currently enrolled in the Rugters University coding
+                            Ideally into a technical positions, currently enrolled in the Rugters University
+                            coding
                             bootcamp.
-                            Residing in Metuchen NJ, ideally located in central jersey, can travel to many different
+                            Residing in Metuchen NJ, ideally located in central jersey, can travel to many
+                            different
                             locations as
                             required.
                             Can be in NYC within 40mins or philadelphia within 1 hour, commute will not be a
@@ -89,18 +108,17 @@
                             analyze
                             data
                             very easily,
-                            Im very adept with excel and can use pivot tables, v lookups, functions and macros with
+                            Im very adept with excel and can use pivot tables, v lookups, functions and macros
+                            with
                             ease.
                         </p>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
-
-
 </body>
-<footer>
-    <p class="copyright"> Copyright © </p>
-</footer>
+<!-- sticky footer, works ok -->
+<div class="sticky">Copyright ©</div>
 
 </html>

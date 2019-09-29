@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- linking bootstrap locally -->
+    <link rel="stylesheet"
+        href="C:\Users\aldoh\OneDrive\Desktop\bootstrap_local\bootstrap-4.3.1-dist\css\bootstrap.min.css">
+
+    <link rel="stylesheet" href="style_portfolio.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Header/NavBar -->
+    <div class="border-bottom">
+        <!-- row that contains all of nav header -->
+        <div class="row bg-white">
+            <!-- this blank column gives a small margin to the header on the left side -->
+            <div class="col-xs-0 col-md-1 col-lg-1">
+            </div>
+            <!-- Column that contains block with full name-->
+            <div class="col-xs-12 col-md-4 col-lg-3" id="aldo_huayhua_headline">
+                <div class="nav-item">
+                    <p id="header-name" class="text-white text-center">Aldo Huayhua</p>
+                </div>
+            </div>
+            <!-- column that contains individual nav on about,port,contact -->
+            <div class="col-xs-12 col-md-7 col-lg-8" id="nav-options">
+                <div class="row">
+                    <!-- empty column to give push nav bar to the right when size is md to lg -->
+                    <div class="col-xs-0 col-md-4 col-lg-6">
+                    </div>
+                    <div class="col-xs-12 col-md-8 col-lg-6">
+                        <!-- nav with about,port,contact specified to be stuck to center of column its contained in -->
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- section containing main article of page -->
+    <div class="container">
+        <div class="row">
+            <div id="jumbotron-body" class="jumbotron bg-white border">
+                <div class="col-md-12">
+                    <h1 id="portfolio-body" class="border-bottom">Portfolio</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+
+                                <div class="card bg-dark text-white">
+                                    <img class="card-img" src="images/image_1.jfif" alt="img-1">
+                                    <div class="card-img-overlay">
+                                        <div class="card-header" id="text-img-1">Word Guess</div>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text">Last updated 3 mins ago</p>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">Header</div>
+                                        <div class="card-body">
+                                          <h5 class="card-title">Primary card title</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                      </div> -->
+
+
+
+
+                                <!-- <div id="img-1">
+                                    <img src="images/image_1.jfif" class="img-fluid" alt="img-1">
+                                    <p id="text-img-1">Word Guess</p>
+                                </div> -->
+
+
+                            </div>
+                            <div class="col-md-4">
+                                <div id="img-2">
+                                    <img src="images/image_2.jfif" class="img-fluid" alt="img-2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div id="img-3">
+                                    <img src="images/image_3.jfif" class="img-fluid" alt="img-1">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div id="img-4">
+                                    <img src="images/image_4.jfif" class="img-fluid" alt="img-2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div id="img-5">
+                                    <img src="images/image_5.jfif" class="img-fluid" alt="img-1">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<!-- sticky footer, works ok -->
+<div class="sticky">Copyright ©</div>
+
+</html>

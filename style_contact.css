@@ -1,10 +1,19 @@
+/* nav bar styling */
 #aldo_huayhua_headline {
-    /* text-align: center; */
     background-color:#4aaaa5;
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
+#header-name {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+#nav-options {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* body stylings */
 body {
     background-image: url("images/concrete-texture.png")
 }
@@ -12,10 +21,8 @@ body {
     width: 940px;
     margin-top: 25px;
     padding-top: 25px;
+    margin-bottom: 100%;
 }
-/* #message-form {
-    height: 100px;
-} */
 textarea.form-control {
     height: 200px;
 }
@@ -26,4 +33,22 @@ textarea.form-control {
 }
 #contact-line {
     color: black;
+}
+/* footer atylings */
+div.sticky {
+    clear: both;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0%;
+    background-color: #777777;
+    text-align: center;
+    border-style: solid;
+    border-right: hidden;
+    border-left: hidden;
+    border-bottom: hidden;
+    border-width: 5px;
+    border-color: #4aaaa5;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
